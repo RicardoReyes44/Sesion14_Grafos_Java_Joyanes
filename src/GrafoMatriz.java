@@ -56,4 +56,13 @@ public class GrafoMatriz {
 	    if (va < 0 || vb < 0) throw new Exception ("Vértice no existe");
 	    return matAd[va][vb] == 1;
 	}
+	
+	public void imprimir() {
+		for(int i=0; i<matAd.length; i++) {
+			for(int j=0; j<matAd.length; j++) {
+				System.out.print(matAd[i][j]);
+			}
+			System.out.println();
+		}
+	}
 }
