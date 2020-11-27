@@ -16,6 +16,15 @@ public class GrafoMatriz {
 	    numVerts = 0;
 	}
 	
+	public int[][] getMatriz() {
+		return matAd;
+	}
+	
+	public int getNumVerts() {
+		return numVerts;
+	}
+	
+	
 	public void nuevoVertice (String nom)
 	{
 		boolean esta = numVertice(nom) >= 0;
