@@ -38,4 +38,22 @@ public class GrafoMatriz {
 	    }
 	    return (i < numVerts) ? i : -1;
 	}
+	
+	public void nuevoArco(String a, String b)throws Exception
+	{
+	    int va, vb;
+	    va = numVertice(a);
+	    vb = numVertice(b);
+	    if (va < 0 || vb < 0) throw new Exception ("Vértice no existe");
+	    matAd[va][vb] = 1;
+	}
+	
+	public boolean adyacente(String a, String b)throws Exception
+	{
+	    int va, vb;
+	    va = numVertice(a);
+	    vb = numVertice(b);
+	    if (va < 0 || vb < 0) throw new Exception ("Vértice no existe");
+	    return matAd[va][vb] == 1;
+	}
 }
