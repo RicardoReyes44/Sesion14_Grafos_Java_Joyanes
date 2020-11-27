@@ -23,4 +23,9 @@ public class Vertice {
 	{
 	 numVertice = n;
 	}
+	
+	public String toString() // características del vértice
+	{
+	 return nombre + " (" + numVertice + ")";
+	}
 }
